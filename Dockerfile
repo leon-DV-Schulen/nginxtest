@@ -4,7 +4,7 @@ EXPOSE 80
 EXPOSE 443
 
 COPY default.conf etc/nginx/conf.d/
-COPY index.html /usr/share/nginx/html
+COPY website /usr/share/nginx/html
 
 RUN chown -R www-data:www-data /usr/share/nginx/html
 RUN chmod ugo-rwx /usr/share/nginx/html
